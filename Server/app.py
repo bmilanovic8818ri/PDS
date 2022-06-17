@@ -37,7 +37,6 @@ def users_route():
             user = {
                 "ime": request.json["ime"],
                 "prezime": request.json["prezime"],
-                "username": request.json.get("username"),
                 "smer": request.json.get("smer"),
                 "predmeti": [p for p in request.json.get("predmeti")],
                 "id": id_counter
